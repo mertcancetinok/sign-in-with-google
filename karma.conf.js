@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular-sign-with-google'),
+      dir: require('path').join(__dirname, './coverage/angular-signIn-with-google'),
       subdir: '.',
       reporters: [
         { type: 'html' },

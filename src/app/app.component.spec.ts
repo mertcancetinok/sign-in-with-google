@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-sign-with-google'`, () => {
+  it(`should have as title 'angular-signIn-with-google'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-sign-with-google');
+    expect(app.title).toEqual('angular-signIn-with-google');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-sign-with-google app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-signIn-with-google app is running!');
   });
 });

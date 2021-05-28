@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'angular-sign-with-google';
+export class AppComponent{
+  title = 'angular-signIn-with-google';
 }

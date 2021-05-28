@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-sign-with-google": {
+    "angular-signIn-with-google": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-sign-with-google",
+            "outputPath": "dist/angular-signIn-with-google",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -65,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-sign-with-google:build"
+            "browserTarget": "angular-signIn-with-google:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-sign-with-google:build:production"
+              "browserTarget": "angular-signIn-with-google:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-sign-with-google:build"
+            "browserTarget": "angular-signIn-with-google:build"
           }
         },
         "test": {
@@ -113,16 +117,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-sign-with-google:serve"
+            "devServerTarget": "angular-signIn-with-google:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-sign-with-google:serve:production"
+              "devServerTarget": "angular-signIn-with-google:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-sign-with-google"
+  "defaultProject": "angular-signIn-with-google"
 }
