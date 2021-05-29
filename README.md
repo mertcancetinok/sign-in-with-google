@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
 
+## Settings
+Go this page [setting page](https://github.com/mertcancetinok/sign-in-with-google/blob/main/src/app/app.module.ts).<br>
+
+Find the this code line
+```
+provider: new GoogleLoginProvider(
+          'your-client-id'
+        )
+```
+
+Paste your google client id.
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
